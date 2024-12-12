@@ -1,0 +1,90 @@
+{
+  "name": "create-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn lint",
+    "start": "nodemon --ignore ./client/ index.js",
+    "dev": "nodemon index.js",
+    "serve-client": "cd client && yarn start",
+    "build": "cd client && yarn build",
+    "app": "concurrently --kill-others \"yarn start\" \"yarn serve-client\"",
+    "lint": "eslint . --ext js --report-unused-disable-directives --fix --quiet",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "Setup boiler plate for NodeJS and ExpressJS\r Boiler Plate:",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "aws-sdk": "^2.1318.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "fluent-ffmpeg": "^2.1.3",
+    "heic2any": "^0.0.4",
+    "http": "^0.0.1-security",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.5.0",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.20",
+    "postmark": "^3.0.18",
+    "shotstack-sdk": "^0.2.2",
+    "twilio": "^5.0.4",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "@types/chroma-js": "^2.4.3",
+    "@types/draft-js": "^0.11.16",
+    "@types/draftjs-to-html": "^0.8.4",
+    "@types/lodash": "^4.14.202",
+    "@types/react-draft-wysiwyg": "^1.13.7",
+    "@types/react-slick": "^0.23.12",
+    "@types/uuid": "^9.0.7",
+    "concurrently": "^6.5.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.5.0",
+    "prettier": "^3.1.1",
+    "vitest": "^1.1.0"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peersuma-team/templates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peersuma-team/templates/issues"
+  },
+  "homepage": "https://github.com/peersuma-team/templates#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format && yarn lint"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint . --ext js --report-unused-disable-directives --fix --quiet",
+      "eslint client/src --ext js,jsx,ts,tsx --report-unused-disable-directives --quiet --fix"
+    ]
+  }
+}

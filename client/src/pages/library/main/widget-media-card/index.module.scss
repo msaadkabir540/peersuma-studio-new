@@ -1,0 +1,68 @@
+.widgetMediaContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  .widgetMedia {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 0px;
+    height: 60px;
+    border: 2px dashed #d3d3d3;
+    border-radius: 6px;
+    cursor: pointer;
+    .thumbnailImg {
+      width: 60px;
+      border-radius: 10px;
+      padding: 5px;
+      object-fit: cover;
+    }
+    span {
+      width: 150px;
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      align-items: center;
+      justify-content: start;
+      text-overflow: ellipsis;
+    }
+    .arrow {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+  .dropDownBox {
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+    height: 85px;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 15px 10px;
+    border: 1px solid #c7c7c7;
+    width: 94%;
+    border-radius: 6px;
+    button {
+      gap: 10px;
+      border: none;
+      display: flex;
+      align-items: center;
+      background-color: none;
+      cursor: pointer !important;
+      img {
+        width: 25px;
+      }
+    }
+  }
+  .dropDownBoxActive {
+    gap: 0px;
+    padding: 0px;
+    height: 0px !important;
+    opacity: 0 !important;
+    button {
+      cursor: pointer !important;
+    }
+  }
+}

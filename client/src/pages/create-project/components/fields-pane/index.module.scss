@@ -1,0 +1,392 @@
+.form2Wrapper {
+  width: 100%;
+  .form2 {
+    border-radius: 4px;
+    padding: 0px 5px;
+    height: calc(40vh - 14px);
+    overflow-y: scroll;
+    border-top: 2px solid #081755;
+    .inputClass {
+      font-size: 10px !important;
+      width: -webkit-fill-available !important;
+    }
+    .startOver {
+      margin: 20px 0;
+    }
+    .templateFieldsLoader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+    }
+    .toggleBtn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+.fieldsBox {
+  display: flex;
+  gap: 3px;
+  border-radius: 4px;
+  height: 25px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .videoField {
+    height: 125px !important;
+    width: 100%;
+    padding: 1px 1px;
+    font-size: 12px;
+    ::-webkit-scrollbar {
+      height: 5px;
+    }
+  }
+  .dragItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-left: 4px;
+    height: 33px;
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+  .videoThumbnail {
+    width: 125px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+  }
+  label {
+    display: flex;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  input {
+    display: flex;
+    width: -webkit-fill-available !important;
+    font-size: 13px !important;
+  }
+  .inputClass .span {
+    display: flex;
+    width: -webkit-fill-available !important;
+    border: 1px solid rgb(192, 192, 192);
+    height: 14px;
+    border-radius: 4px;
+    padding: 10px 8px;
+    line-height: 1;
+    font-size: 10px !important;
+  }
+  .inputClass {
+    font-size: 10px !important;
+  }
+  .placeholder {
+    color: #c0c0c0;
+  }
+  .mainDiv {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    button {
+      margin: 21px 0 0 10px;
+    }
+    .headerContainer {
+      display: flex !important;
+      align-items: center !important;
+      position: relative !important;
+      gap: 2px !important;
+      justify-content: space-between !important;
+      .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+      }
+    }
+  }
+  .fieldsDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+      font-size: 12px;
+    }
+  }
+}
+.mergePane {
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+}
+.dragElement {
+  color: black;
+  cursor: grabbing;
+  position: relative;
+  .dragElementInner {
+    top: -200px;
+    left: -3000px;
+    padding: 16px;
+    color: black;
+    cursor: grabbing;
+    user-select: none;
+    position: absolute;
+    width: fit-content;
+    border-radius: 5px;
+    height: fit-content;
+    margin: 0px 8px 0px 0px;
+    background-color: #d7d7d7;
+    img {
+      width: 125px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+}
+.card {
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75px;
+    font-size: 13px;
+    margin-left: 4px;
+    padding: 5px 0px;
+  }
+  .imageBox {
+    position: relative;
+    .clipVideoCardss {
+      width: 125px;
+      height: 85px;
+      object-fit: fill;
+      background: #414141;
+      .muteVideo {
+        top: 0px;
+        left: 0px;
+        .volumeIcon {
+          margin-left: auto;
+          width: 20px;
+          padding: 5px;
+          background: #414141;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .durationClass {
+      position: absolute;
+      background: #414141;
+      top: 63px;
+      z-index: 2;
+      color: white;
+      padding: 4px;
+      margin: 2px;
+      font-size: 12px;
+      left: 0px;
+      border-radius: 5px;
+    }
+    .stagingDurationClass {
+      position: absolute;
+      background: #414141;
+      top: 130px;
+      z-index: 999;
+      color: white;
+      padding: 4px;
+      margin: 2px;
+      font-size: 12px;
+      left: 0px;
+      border-radius: 5px;
+    }
+    .imageClassRemove {
+      background-color: rgb(184, 184, 184);
+      display: block;
+      position: absolute;
+      top: 0%;
+      // z-index: 2;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      animation: slide-down 0.5s ease-in-out forwards;
+    }
+    .thumbnailZoom {
+      background-color: rgb(184, 184, 184);
+      display: none;
+      position: absolute;
+      top: 0%;
+      z-index: 1;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      animation: slide-down 1s ease-in-out forwards;
+      .muteVideo {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        .volumeIcon {
+          margin-left: auto;
+          width: 20px;
+          padding: 5px;
+          background: #414141;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+      .clipVideoCards {
+        width: 125px;
+        height: 85px;
+        object-fit: scale-down;
+        border-radius: 5px 5px 0px 0px;
+      }
+    }
+    &:hover .thumbnailZoom {
+      display: block;
+    }
+    &:hover .imageClassRemove {
+      display: none;
+    }
+
+    @keyframes slide-down {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+.loaderClass {
+  width: 15px !important;
+  height: 15px !important;
+  border-color: rgb(0 0 0);
+  border-right: 2px solid #ffffff00;
+  margin: auto;
+}
+.assemblyContainer {
+  display: flex;
+  flex-direction: column;
+  .assemblyHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 600;
+    border-top: 1px solid #d7d7d7;
+  }
+  .createButton {
+    background: none;
+    border: none;
+    height: 26px;
+    cursor: pointer;
+  }
+  .assembly {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    .mergeContainer {
+      height: 100%;
+      .heading {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.ActiveBtn {
+  background-color: #909090 !important;
+}
+.selectedVideoClip {
+  border: 4px solid rgb(254, 254, 120);
+  padding: 0px;
+  margin: -3px;
+  border-radius: 5px;
+  font-size: 10px;
+  height: 111px;
+}
+textarea {
+  font-size: 13px !important;
+}
+.headerContainer {
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  gap: 2px !important;
+  justify-content: space-between !important;
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 7px 0px 4px 0px;
+  }
+}
+
+.modalContainer {
+  position: absolute;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1c1c1c91;
+  top: 65%;
+  z-index: 999;
+  border-radius: 4px;
+  .clipHeading {
+    border-radius: 4px;
+    color: #d5d5d5;
+  }
+  ul {
+    border-radius: 4px;
+    max-width: 125px;
+    min-width: 125px;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+    font-size: 13px;
+    li {
+      width: 115px;
+      cursor: pointer;
+      list-style: none;
+      padding: 0px 5px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #909090;
+      }
+      .iconClass {
+        margin-left: auto;
+        width: 18px;
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.StagingClipVideoCards {
+  width: 135px !important;
+  height: 150px;
+  object-fit: cover;
+  background: #414141;
+  .muteVideo {
+    top: 0px;
+    left: 0px;
+    .volumeIcon {
+      margin-left: auto;
+      width: 20px;
+      padding: 5px;
+      background: #414141;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}

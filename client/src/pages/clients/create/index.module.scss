@@ -1,0 +1,366 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  justify-content: space-between;
+  h2 {
+    margin-left: 20px;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    p {
+      padding: 10px;
+      font-size: 18px;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
+.activeTab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+  gap: 20px;
+  opacity: 1;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  label {
+    display: flex;
+    font-weight: 600;
+  }
+  input {
+    display: flex;
+    width: 100% !important;
+  }
+}
+.flexClass {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+}
+.inactiveTab {
+  opacity: 0;
+}
+.topButtonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.createButton {
+  width: 120px;
+  margin-left: 10px;
+}
+.descriptionTemp {
+  p {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+}
+.infoText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  span {
+    font-size: 40px;
+  }
+}
+.loaderClass {
+  width: 15px !important;
+  height: 15px !important;
+  border-color: rgb(0 0 0);
+  border-right: 2px solid #ffffff00;
+  margin: auto;
+}
+.jsonBody {
+  font-size: 34px !important;
+}
+.loaderClassDelete {
+  width: 15px !important;
+  height: 15px !important;
+}
+////////
+///
+
+.testFieldBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  label {
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  input {
+    display: flex;
+    width: -webkit-fill-available !important;
+    margin-bottom: 20px;
+  }
+  .span {
+    display: flex;
+    width: -webkit-fill-available !important;
+    border: 1px solid rgb(192, 192, 192);
+    height: 14px;
+    border-radius: 4px;
+    padding: 10px 8px;
+    line-height: 1;
+    font-size: 14px;
+  }
+  .placeholder {
+    color: #c0c0c0;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  td {
+    padding: 10px;
+    &:last-child {
+      text-align: center;
+    }
+  }
+}
+.flexDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.headerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.groupDiv {
+  border: 1px solid lightgray;
+  height: 100%;
+  padding: 15px;
+  border-radius: 4px;
+}
+.uploadBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.iconRow {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  gap: 10px;
+  justify-content: center;
+  .save {
+    margin-left: 30px;
+    margin-top: 21px;
+  }
+}
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+.form2 {
+  width: 100%;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 4px;
+  padding: 20px;
+  .inputClass {
+    width: -webkit-fill-available !important;
+  }
+  .startOver {
+    margin: 20px 0;
+  }
+  .templateFieldsLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    label {
+      display: flex;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    input {
+      display: flex;
+      width: -webkit-fill-available !important;
+    }
+    .span {
+      display: flex;
+      width: -webkit-fill-available !important;
+      border: 1px solid rgb(192, 192, 192);
+      height: 14px;
+      border-radius: 4px;
+      padding: 10px 8px;
+      line-height: 1;
+      font-size: 14px;
+    }
+    .placeholder {
+      color: #c0c0c0;
+    }
+    .mainDiv {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      button {
+        margin: 21px 0 0 10px;
+      }
+    }
+    .fieldsDiv {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.videoPlayer {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.modalImage {
+  max-width: 53.5vw;
+  max-height: 100%;
+}
+
+.nameEditing {
+  display: flex;
+  align-items: center;
+  .input {
+    width: 100%;
+  }
+}
+.updateBtnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ui {
+  .addBtnDiv {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .header {
+    display: flex;
+    .stylesCards {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      width: 100%;
+      .card {
+        gap: 5px;
+        min-width: 350px;
+        max-width: 350px;
+        min-height: 400px;
+        display: flex;
+        border-radius: 8px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #8a8a8a4d;
+
+        .upperDiv {
+          width: 90%;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          span {
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 18px;
+          }
+          .flexClass {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-left: 20px;
+            img {
+              height: 25px;
+              width: 25px;
+              cursor: pointer;
+            }
+          }
+        }
+        .lowerDiv {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 90%;
+          img {
+            height: 150px;
+            width: 150px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .styleEdit {
+    margin-bottom: 20px;
+    h2 {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-right: 10px !important;
+    }
+  }
+}
+.btnDivBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ActiveBtn {
+  background-color: #909090 !important;
+}
+.avatarContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0px;
+  .avatar_wrapper {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px -5px black;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+    }
+  }
+}

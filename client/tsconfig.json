@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "jsx": "react-jsx",
+    "module": "es2022",
+    "moduleResolution": "Node",
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/api-services/*": ["api-services/*"],
+      "@/reducers/*": ["reducers/*"],
+      "@/common/*": ["common/*"],
+      "@/utils/*": ["utils/*"],
+      "@/interface/*": ["interface/*"],
+      "@/pages/*": ["pages/*"],
+      "@/custom-hook/*": ["custom-hook/*"],
+      "@/constants/*": ["constants/*"],
+      "@/routes/*": ["routes/*"],
+      "@/context/*": ["context/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules"]
+}

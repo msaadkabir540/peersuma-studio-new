@@ -1,0 +1,105 @@
+.styleEdit {
+  margin: 7px 0px;
+
+  .field {
+    width: 100%;
+
+    input {
+      width: 99%;
+    }
+  }
+
+  .btnDivBottom {
+    gap: 10px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.mediaClass {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+
+  .thumbnailUrlClassName {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .videoPlayer {
+    height: 200px;
+
+  }
+
+  .videoBtnContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+.uploadButtonClass {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+}
+
+.uploadButtonClassName {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  // width: 540px;
+}
+
+.tooltipClass {
+  bottom: 42px !important;
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  color: #ff5050;
+}
+
+// .tooltipClass {
+//   top: 32px !important;
+
+// }
+
+.colorContainer {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+
+  .colorCircle {
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+  }
+
+  .inputContainer {
+    input {
+      padding: 2px;
+      height: 30px;
+      font-size: 14px;
+      border-radius: 4px;
+      width: 40px !important;
+      background: transparent;
+      border: 1px solid #d5d5d5;
+    }
+  }
+}
+
+.btnThumbnailReplace {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-start;
+}

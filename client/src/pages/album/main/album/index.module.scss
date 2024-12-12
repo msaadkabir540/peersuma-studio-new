@@ -1,0 +1,582 @@
+.albumContainer {
+  margin-top: 35px;
+
+  .albumHeader {
+    display: flex;
+    justify-content: space-between;
+
+    .headingContainer {
+      display: flex;
+      margin-bottom: 15px;
+      flex-direction: column;
+
+      .heading {
+        display: flex;
+        gap: 15px;
+      }
+
+      .albumCopyLink {
+        .linkContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .emailDrag {
+    display: flex;
+    height: 100px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .emailDragBox {
+    display: flex;
+    width: 50%;
+    border: 1px dashed #bfbfbf;
+    background-color: white;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 6px 15px;
+    flex-direction: column;
+
+    .emailDragContainer {
+      display: flex;
+      overflow: scroll;
+      height: 120px;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      .dragDiv {
+        border-top: 1px dashed #bfbfbf;
+        display: flex;
+        align-items: center;
+        height: 55px;
+
+        .dragText {
+          font-size: 13px;
+        }
+      }
+
+      .userList {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+        gap: 0px;
+        padding: 5px;
+        flex-direction: column;
+        cursor: pointer;
+
+        .userIcons {
+          position: relative;
+          background-color: rgb(8, 97, 8);
+          color: white;
+          width: 28px;
+          height: 28px;
+          border-radius: 100%;
+          text-transform: uppercase;
+          padding: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          text-align: center;
+          flex-direction: column;
+
+          .userListModal {
+            top: 40px;
+            z-index: 99;
+            right: -45px;
+            width: 180px;
+
+            .userListModalData {
+              color: black;
+              width: 150px;
+            }
+          }
+        }
+
+        .email {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-weight: 400;
+          line-height: 1.43;
+          letter-spacing: 0.01071em;
+
+          .nameDiv {
+            font-weight: 600;
+          }
+
+          .emailDiv {
+            text-align: center;
+            color: gray;
+          }
+        }
+      }
+
+      .userInvited {
+        position: relative;
+        background-color: rgb(8, 97, 8);
+        color: white;
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        text-transform: uppercase;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        text-align: center;
+        flex-direction: column;
+
+        .userListModal {
+          top: 40px;
+          z-index: 99;
+          right: -45px;
+          width: 180px;
+
+          .userListModalData {
+            color: black;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .filterContainer {
+    gap: 5px;
+    height: 40px;
+    display: flex;
+    margin: 15px 0px;
+    align-items: end;
+    justify-content: flex-end;
+
+    .field {
+      display: flex;
+      width: 20%;
+    }
+
+    .buttonBox {
+      display: flex;
+    }
+  }
+
+  .albumMediaContainer {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    gap: 10px;
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+
+      @media (max-width: 1250px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 950px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .albumMedia {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        max-width: 1250px;
+        position: relative;
+        flex-direction: column;
+
+        .iconsHover {
+          display: none;
+          background-color: #6f6f6fc2;
+          width: 100%;
+          height: 53px;
+          position: absolute;
+          top: 0;
+          border-radius: 8px;
+          transition: all 0.4s;
+        }
+
+        &:hover {
+          .iconsHover {
+            display: block;
+          }
+        }
+
+        .downloadImg {
+          position: absolute;
+          background-color: #bdbdbd;
+          border-radius: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          top: 5px;
+          right: 22%;
+          z-index: 1;
+
+          .loadingClass {
+            width: 30px;
+            height: 30px;
+          }
+
+          img {
+            width: 100%;
+            max-width: 45px;
+            min-width: 6px;
+            max-height: 9px;
+            min-height: 25px;
+            cursor: pointer;
+            padding: 4px;
+          }
+        }
+
+        .downloadImg {
+          position: absolute;
+          background-color: #bdbdbd;
+          border-radius: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          top: 5px;
+          right: 55px;
+          z-index: 1;
+
+          .loadingClass {
+            width: 30px;
+            height: 30px;
+          }
+
+          img {
+            width: 100%;
+            max-width: 45px;
+            min-width: 6px;
+            max-height: 9px;
+            min-height: 25px;
+            cursor: pointer;
+            padding: 4px;
+          }
+        }
+
+        .deleteImg {
+          position: absolute;
+          background-color: #bdbdbd;
+          border-radius: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          top: 5px;
+          right: 5px;
+          z-index: 1;
+
+          img {
+            width: 100%;
+            max-width: 100px;
+            min-width: 15px;
+            max-height: 16px;
+            min-height: 35px;
+            cursor: pointer;
+          }
+        }
+
+        .checkBox {
+          position: absolute;
+          left: 10px;
+          z-index: 1;
+          bottom: -26px;
+
+          input {
+            max-width: 100px;
+            max-height: 100px;
+            min-height: 100px;
+            min-width: 30px;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 400px;
+          border-radius: 7px 7px 0px 0px;
+          max-height: 250px;
+          min-height: 250px;
+          object-fit: cover;
+        }
+
+        .mediaContent {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          max-width: 400px;
+          border-radius: 0px 0px 7px 7px;
+          background-color: rgb(243, 243, 243);
+          border-top: 1px solid lightgray;
+          font-size: 0.7rem;
+
+          p {
+            padding: 0 10px;
+            text-transform: capitalize;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .userListContainer {
+      height: 100vh;
+      width: 100%;
+      overflow: scroll;
+      position: sticky;
+      padding: 5px 20px;
+      border-color: #bdbdbd;
+      background-color: #ececec;
+      border-left: 1px solid black;
+
+      .switchContainer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+
+        .switch {
+          margin-bottom: 0px !important;
+        }
+
+        .invitedUserText {
+          width: 150px;
+        }
+      }
+
+      .field {
+        .inputClass {
+          width: 92%;
+        }
+
+        .userList {
+          position: relative;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color: white;
+          width: 100%;
+          height: 50px;
+          margin: 10px 0px;
+
+          .userIcons {
+            background-color: #1976d2;
+            text-transform: uppercase;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            text-align: center;
+
+            @media (max-width: 1200px) {
+              font-size: 10px;
+            }
+          }
+
+          .userInvited {
+            position: relative;
+            background-color: rgb(8, 97, 8);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 100%;
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 16px;
+            text-align: center;
+
+            .userListModal {
+              top: 40px;
+              z-index: 99;
+              right: -45px;
+              width: 180px;
+
+              .userListModalData {
+                color: black;
+                width: 150px;
+              }
+            }
+          }
+
+          .userNotInvited {
+            background-color: transparent;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 9px;
+            text-align: center;
+          }
+
+          .email {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.43;
+            letter-spacing: 0.01071em;
+
+            .nameDiv {
+              font-weight: 600;
+            }
+
+            .emailDiv {
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              width: 100px;
+              font-size: 10px;
+              color: gray;
+            }
+
+            .DragIcon {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .videoPlayer {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  .confirmModalContainer {
+    margin: 15px;
+
+    .modalText {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .modalBUtton {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  }
+
+  .modalWidth {
+    max-width: 30vw;
+  }
+}
+
+.shotArea {
+  height: 45px;
+  display: flex;
+  gap: 10px;
+}
+
+.addShot {
+  background-color: transparent;
+  padding: 20px;
+
+  &:hover {
+    background-color: #1976d2 !important;
+    color: white;
+  }
+}
+
+.ShotHeading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  h2 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  img {
+    border-radius: 50%;
+    padding: 5px;
+
+    &:hover {
+      background-color: rgba(25, 118, 210, 0.05);
+    }
+  }
+}
+
+.shortLink {
+  .label {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .linkContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.shareLink {
+  text-decoration: none;
+  font-weight: 900;
+  color: #1976d2;
+}
+
+.dragElementInner {
+  top: -200px;
+  left: -3000px;
+  padding: 10px;
+  color: black;
+  cursor: grabbing;
+  user-select: none;
+  position: absolute;
+  width: fit-content;
+  border-radius: 5px;
+  height: fit-content;
+  margin: 0px 8px 0px 0px;
+  background-color: #e0e0e0;
+}
+
+.userNameDate {
+  font-size: 18px;
+  font-weight: 600;
+}

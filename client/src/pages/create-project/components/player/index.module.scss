@@ -1,0 +1,213 @@
+.playerMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .playerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 35vw;
+    .PlayerCloseContainer {
+      display: flex;
+      background-color: #414141;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      min-width: 500px;
+      min-height: 400px;
+      max-height: 410px;
+    }
+  }
+  .form2Wrapper {
+    margin-top: 12px;
+    width: 100%;
+    .form2 {
+      border: 1px solid rgb(192, 192, 192);
+      border-radius: 4px;
+      padding: 5px 10px;
+      gap: 10px;
+      .inputClass {
+        width: -webkit-fill-available !important;
+      }
+      .startOver {
+        margin: 20px 0;
+      }
+      .templateFieldsLoader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+      }
+    }
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 10px;
+    .videoField {
+      height: auto !important;
+      width: 100%;
+      max-width: 470px;
+      min-width: 200px;
+      .videoClipBox {
+        max-width: 200px;
+        .card {
+          display: flex !important;
+          flex-direction: column !important;
+          .dragItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5px;
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .dragItem {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding-top: 5px;
+      img {
+        cursor: pointer;
+      }
+    }
+    .videoThumbnail {
+      width: 135px;
+      height: 100px;
+      object-fit: cover;
+    }
+    label {
+      display: flex;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    input {
+      display: flex;
+      width: -webkit-fill-available !important;
+    }
+    .span {
+      display: flex;
+      width: -webkit-fill-available !important;
+      border: 1px solid rgb(192, 192, 192);
+      height: 14px;
+      border-radius: 4px;
+      padding: 10px 8px;
+      line-height: 1;
+      font-size: 14px;
+    }
+    .placeholder {
+      color: #c0c0c0;
+    }
+    .mainDiv {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      .headerContainer {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        gap: 2px;
+        .buttonContainer {
+          display: flex;
+          justify-content: flex-end;
+          gap: 15px;
+        }
+      }
+    }
+    .fieldsDiv {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      label {
+        font-size: 13px !important;
+      }
+    }
+  }
+  .mergePane {
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+  }
+  .dragElement {
+    color: black;
+    cursor: grabbing;
+    position: relative;
+    .dragElementInner {
+      top: -200px;
+      left: -3000px;
+      padding: 16px;
+      color: black;
+      cursor: grabbing;
+      user-select: none;
+      position: absolute;
+      width: fit-content;
+      border-radius: 5px;
+      height: fit-content;
+      margin: 0px 8px 0px 0px;
+      background-color: #d7d7d7;
+      img {
+        width: 125px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    .name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 125px;
+    }
+  }
+  .loaderClass {
+    width: 15px !important;
+    height: 15px !important;
+    border-color: rgb(0 0 0);
+    border-right: 2px solid #ffffff00;
+    margin: auto;
+  }
+  .assemblyContainer {
+    display: flex;
+    flex-direction: column;
+    .assembly {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      .mediaList {
+        width: 50%;
+      }
+      .mergeContainer {
+        width: 50%;
+        .mergePane {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.dragElement {
+  background-color: #d7d7d7;
+  color: black;
+  border-radius: 5px;
+  user-select: none;
+  padding: 16px;
+  margin: 0px 8px 0px 0px;
+  width: fit-content;
+  height: fit-content;
+  cursor: grabbing;
+  img {
+    width: 125px;
+    height: 100px;
+    object-fit: cover;
+  }
+}

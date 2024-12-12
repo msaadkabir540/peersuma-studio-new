@@ -1,0 +1,158 @@
+.formClass {
+  width: 100%;
+  padding: 60px;
+  @media (max-width: 480px) {
+    padding: 60px 20px 63px 20px;
+  }
+  .activeTab {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    max-width: 630px;
+    margin: 0px auto;
+    @media (max-width: 480px) {
+      gap: 40px;
+    }
+    .logoDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--N10, 10px);
+      align-self: stretch;
+      img {
+        width: 180px;
+        height: 180px;
+        @media (max-width: 480px) {
+          width: 100px !important;
+          height: 100px !important;
+        }
+        @media (max-width: 1200px) {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      .headingDiv {
+        color: #0f0f0f;
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @media (max-width: 480px) {
+          font-size: 36px;
+        }
+      }
+      .textDiv {
+        color: #a1a1a1;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @media (max-width: 480px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+    @media (max-width: 480px) {
+      gap: 13px;
+    }
+    input {
+      font-size: 20px !important;
+      padding: 15px !important;
+      border-radius: 10px !important;
+      background-color: rgb(255, 255, 255) !important;
+      height: max-content;
+      &::placeholder {
+        font-size: 20px;
+        font-weight: 400;
+        color: #c0c0c0;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        @media (max-width: 480px) {
+          font-size: 15px;
+        }
+      }
+      @media (max-width: 480px) {
+        font-size: 15px !important;
+        padding: 13px !important;
+      }
+    }
+  }
+  .btnContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .forgetPassword {
+    cursor: pointer;
+    font-size: 20px;
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+  .forgetPassword:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .loginButtonContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .btnClassCommon {
+      height: 47px !important;
+      max-width: none !important;
+      padding: 20px !important;
+      border-radius: 10px !important;
+      @media (max-width: 1250px) {
+        height: 44px !important;
+      }
+    }
+    .btn {
+      background-color: #ed1c24 !important;
+      border: none !important;
+    }
+    .btnTransparent {
+      background-color: transparent !important;
+      border: 1px solid #ed1c24 !important;
+    }
+    .titleTextClass {
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      @media (max-width: 1250px) {
+        font-size: 20px;
+      }
+    }
+    .titleTextClassTransparent {
+      color: #ed1c24;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      @media (max-width: 1250px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+.loaderClassAut {
+  border-color: rgb(255 255 255) !important;
+  border-right: 2px solid rgba(255, 255, 255, 0) !important;
+  margin: 0px auto !important;
+}

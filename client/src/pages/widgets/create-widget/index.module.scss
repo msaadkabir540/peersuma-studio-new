@@ -1,0 +1,13 @@
+.container {
+  margin-top: 40px;
+  title {
+  }
+  .field {
+    margin: 20px 0;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+}

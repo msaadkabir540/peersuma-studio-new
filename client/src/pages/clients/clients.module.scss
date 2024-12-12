@@ -1,0 +1,109 @@
+.cBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0px;
+  gap: 20px;
+}
+.iconRow {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  justify-content: center;
+}
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+.thumbnailContainer {
+  position: relative;
+  padding-left: 10px;
+  img {
+    height: 25px;
+  }
+  .thumbnailZoom {
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 60px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: slide-down 0.5s ease-in-out forwards;
+    img {
+      height: 200px;
+    }
+  }
+  &:hover .thumbnailZoom {
+    display: block;
+  }
+}
+@keyframes slide-down {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.iconDiv {
+  height: 40px;
+  width: 40px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.opacityModal {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.bodyModal {
+  max-width: 25vw !important;
+}
+.deleteModal {
+  text-align: center;
+  margin: 15px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+    span {
+      font-weight: bolder;
+      color: #ce4343;
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    .delBtn {
+      background-color: #ce4343;
+      min-width: 100px;
+      justify-content: center;
+      p {
+        color: white;
+        margin: 0px;
+      }
+      &:hover {
+        p {
+          color: black;
+        }
+      }
+    }
+    .cancelBtn {
+      background-color: #d3d3d3;
+      min-width: 100px;
+    }
+  }
+}
+.active {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

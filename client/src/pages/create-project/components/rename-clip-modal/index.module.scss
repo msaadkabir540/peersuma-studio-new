@@ -1,0 +1,29 @@
+.renameModal {
+  width: 30vw !important;
+  padding: 25 !important;
+}
+.renameClass {
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 95%;
+  height: 14px;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid #d5d5d5;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.renameBtnContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 10px;
+}
+
+.error {
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  color: #ff5050;
+}

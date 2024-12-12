@@ -1,0 +1,42 @@
+.showcaseContainer {
+  background-image: linear-gradient(to bottom, #b1af6b, #b1af6b7a);
+  width: 100%;
+  padding: 0px;
+  margin: 10px;
+  border-radius: 5px;
+  min-height: 10vh;
+  height: 100%;
+  .ShowcaseHeader {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    border-bottom: 2px solid lightgrey;
+    .showCaseDropDown {
+      position: absolute;
+      right: 250px;
+      top: 50px;
+    }
+    .showCaseModal {
+      left: -90px !important;
+    }
+  }
+  .WidgetVideoCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+
+    @media (max-width: 1450px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 980px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

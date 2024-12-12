@@ -1,0 +1,16 @@
+.viewAllClass {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  width: 65px;
+  border-bottom: 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+  cursor: pointer;
+  @media (max-width: 480px) {
+    font-size: 10px !important;
+  }
+}

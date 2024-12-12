@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .containerHeader {
+    .videoDiv {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 225px;
+        border-radius: 5px;
+        object-fit: cover;
+
+        @media (max-width: 880px) {
+          height: 190px;
+        }
+      }
+    }
+
+    .videoDuration {
+      position: absolute;
+      background-color: rgba(26, 46, 59, 0.85);
+      bottom: 12px;
+      right: 5px;
+      padding: 2px 9px;
+      color: #fff;
+      border-radius: 4px;
+      transition: 0.3s ease-in-out;
+      font-size: 13px;
+    }
+  }
+
+  .headingContainer {
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      cursor: grab;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    .linkContainer {
+      display: flex;
+      justify-content: center;
+      width: 25px;
+      height: 18px;
+
+      img {
+        width: 15px;
+      }
+
+      &:hover {
+        border-radius: 50%;
+        background-color: #2195f317;
+      }
+    }
+
+    p {
+      font-size: 9px;
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.dragElement {
+  color: black;
+  cursor: grabbing;
+  position: relative;
+
+  .dragElementInner {
+    top: -200px;
+    left: -3000px;
+    padding: 16px;
+    color: black;
+    cursor: grabbing;
+    user-select: none;
+    position: absolute;
+    width: fit-content;
+    border-radius: 5px;
+    height: fit-content;
+    margin: 0px 8px 0px 0px;
+    background-color: #d7d7d7;
+
+    img {
+      width: 125px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+}

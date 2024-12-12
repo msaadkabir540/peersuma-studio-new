@@ -1,0 +1,58 @@
+.modal {
+  width: 800px !important;
+}
+.createContainer {
+  max-width: 700px;
+  margin: 35px;
+  .heading {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .fieldContainer {
+    display: flex;
+    flex-direction: column;
+    .selectBox {
+      margin: 10px 0px;
+      .height {
+        height: auto !important;
+      }
+    }
+    .field {
+      margin: 5px 0px;
+    }
+
+    .textArea {
+      margin: 5px 0px;
+    }
+  }
+
+  .shortLink {
+    .label {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .linkContainer {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  }
+  .radioContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0px;
+    p {
+      margin: 0px 0px;
+    }
+  }
+  .btnGroup {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 10px;
+  }
+}

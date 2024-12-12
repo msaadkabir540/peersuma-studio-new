@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  justify-content: space-between;
+
+  h2 {
+    margin-left: 20px;
+  }
+}
+
+.topButtonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.createButton {
+  width: 120px;
+  margin-left: 10px;
+}
+
+.loaderClass {
+  width: 15px !important;
+  height: 15px !important;
+  border-color: rgb(0 0 0);
+  border-right: 2px solid #ffffff00;
+  margin: auto;
+}
+
+.activeTab {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 10px;
+  gap: 10px;
+  opacity: 1;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+
+  label {
+    display: flex;
+    font-weight: 600;
+  }
+
+  input {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.infoText {
+  span {
+    font-size: 40px;
+  }
+}
+
+.double {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.inputClass {
+  width: 100%;
+}
+
+.selectClass {
+  width: 443px;
+}

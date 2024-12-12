@@ -1,0 +1,46 @@
+.container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-gap: 40px; /* Gap between grid items */
+  width: 100%;
+  .formContainer {
+    .tabContainer {
+      gap: 20px;
+      display: flex;
+      padding: 20px 0;
+      margin-top: 30px;
+      flex-direction: column;
+      .field {
+        margin: 20px 0;
+      }
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      .cancelBtn {
+        border: 1px solid #ed1c24;
+        background: transparent !important;
+        max-width: 80px !important ;
+        p {
+          color: var(--Fonts-Font-A, #ed1c24);
+        }
+      }
+      .saveBtn {
+        background: #ed1c24;
+        max-width: 80px !important ;
+        p {
+          color: var(--Background-BG-2, #fff);
+        }
+      }
+    }
+  }
+  .widgetContainer {
+    max-width: 1000px;
+    margin-bottom: 30px;
+    @media (max-width: 1400px) {
+      max-width: 650px;
+    }
+  }
+}

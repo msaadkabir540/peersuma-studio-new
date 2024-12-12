@@ -1,0 +1,21 @@
+.switchContainer {
+  gap: 15px;
+  display: flex;
+  width: 255px;
+
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ed1c24;
+  .switchMainClass {
+    margin-bottom: 0px;
+  }
+  div {
+    color: var(--Fonts-Font-B, #0f0f0f);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

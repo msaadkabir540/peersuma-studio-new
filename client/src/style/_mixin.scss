@@ -1,0 +1,111 @@
+@import "./breakpoints";
+
+@mixin gridTwo($gap_y: 0, $gap_x: 0) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: $tab) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridThree($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $tab) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridFour($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $tab) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridFive($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: 1366px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: $xxs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin gridSix($gap_y: 0, $gap_x: 0) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: $gap_y + px $gap_x + px;
+  grid-auto-rows: auto;
+  @media (max-width: 1366px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 950px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $xxs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin p-small {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+@mixin font29 {
+  font-weight: 400;
+  font-size: calc(10px + (28 - 10) * (100vw - 280px) / (2560 - 280));
+}
+
+@mixin font16 {
+  font-weight: 500;
+  font-size: calc(13px + (15 - 13) * (100vw - 280px) / (2560 - 280));
+}

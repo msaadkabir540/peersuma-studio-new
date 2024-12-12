@@ -1,0 +1,221 @@
+.pages {
+  display: flex;
+  align-items: center;
+
+  a {
+    all: unset;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 20px 0px;
+  }
+
+  .active {
+    border-bottom: 1px solid black;
+  }
+}
+
+.nameEditing {
+  display: flex;
+  align-items: center;
+
+  label {
+    display: flex;
+  }
+
+  .input {
+    width: 100%;
+    max-width: max-content;
+  }
+}
+
+.customClass {
+  height: calc(100vh - 280px);
+}
+
+.fileName {
+  color: #2196f3;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.iconRow {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  gap: 10px;
+  justify-content: center;
+
+  .save {
+    margin-left: 30px;
+    margin-top: 21px;
+  }
+}
+
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.videoPlayer {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.filters {
+  display: flex;
+  margin: 20px 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  .field {
+    width: 300px;
+    margin-left: 10px;
+  }
+
+  .SearchInput {
+    width: 95%;
+  }
+
+  .search {
+    margin: 23px 0 0 10px;
+    width: 82px !important;
+    max-width: 82px !important;
+  }
+
+  .searchIconContainer {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 10px;
+    height: 25px;
+
+    .searchIcon {
+      width: 21px;
+      margin-left: -16px;
+    }
+  }
+}
+
+.uploadBtn {
+  display: flex;
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span {
+    padding: 2px 7px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+  }
+}
+
+.statusBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-top: 7px;
+
+  .multiSelect {
+    width: 200px;
+  }
+}
+
+.selectBox {
+  min-height: 36px !important;
+  height: unset !important;
+}
+
+.thumbnailContainer {
+  position: relative;
+  padding-left: 10px;
+
+  .thumbnailZoom {
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 85px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: slide-down 0.5s ease-in-out forwards;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  &:hover .thumbnailZoom {
+    display: block;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fileType {
+  text-transform: capitalize;
+}
+
+.errorCustomizeMessage {
+  position: relative !important;
+}
+
+
+.customTableClass {
+  thead {
+    tr {
+      th {
+
+        &:nth-child(2) {
+          width: 250px;
+        }
+
+        &:nth-child(3) {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+.btnGroup {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.updateMediaHeading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.editModal {
+  max-width: 600px !important;
+}

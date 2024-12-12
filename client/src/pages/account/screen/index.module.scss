@@ -1,0 +1,34 @@
+@use "../../../style/colors";
+@use "../../../style/breakpoints";
+@import "../../../style/mixin";
+
+.headerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    overflow: auto;
+    grid-template-columns: 1fr;
+  }
+  .leftContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContainer {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

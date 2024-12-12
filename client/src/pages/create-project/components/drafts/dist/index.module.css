@@ -1,0 +1,36 @@
+.backgroundColor {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 730px;
+}
+.backgroundColor .flexLeft {
+  width: 70%;
+  flex: 1;
+}
+.backgroundColor .flexRight {
+  flex: 1;
+}
+
+.selectionStatusClass {
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.noDataClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 198px);
+  min-height: calc(100vh - 198px);
+}
+.noDataClass img {
+  width: 300px;
+}

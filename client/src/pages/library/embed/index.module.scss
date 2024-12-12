@@ -1,0 +1,30 @@
+.thumbnailGridHeight {
+  margin: 0px;
+  height: 600px;
+  background-color: #333;
+  border-radius: 8px;
+  @media (max-width: 1000px) {
+    height: 525px;
+  }
+  @media (max-width: 900px) {
+    height: 480px;
+  }
+  @media (max-width: 800px) {
+    height: 450px;
+  }
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+  @media (max-width: 700px) {
+    height: 380px;
+  }
+  @media (max-width: 600px) {
+    height: 340px;
+  }
+  @media (max-width: 500px) {
+    height: 300px;
+  }
+  @media (max-width: 425px) {
+    height: 200px;
+  }
+}

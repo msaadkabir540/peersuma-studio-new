@@ -1,0 +1,43 @@
+@use "../../style/colors";
+@use "../../style/breakpoints";
+@import "../../style/mixin";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: colors.$btn;
+  font-weight: 600;
+  height: 37px;
+  border-radius: 4px;
+  letter-spacing: 0.25px;
+  padding: 7px 14px;
+  box-shadow: none;
+  max-width: max-content;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid rgb(192, 192, 192);
+  p {
+    margin: 0px !important;
+  }
+  .loaderClass {
+    width: 18px;
+    height: 18px;
+    border-color: rgb(0 0 0);
+    border-right: 2px solid #ffffff00;
+    margin: auto;
+  }
+  &:hover {
+    // background: linear-gradient(to top, #dddddd, white);
+    // border: 1px solid rgb(192, 192, 192);
+  }
+  .arrow_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

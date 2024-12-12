@@ -1,0 +1,105 @@
+.container {
+  max-width: 19.5%;
+  position: fixed;
+  padding: 18.8px;
+  overflow-x: auto;
+  height: calc(100vh - 100.67px);
+  width: 100%;
+  transition: 0.5s;
+  border-left: 1px solid black;
+  border-color: #bdbdbd;
+  background-color: #eeeeee;
+  @media (max-width: 880px) {
+    max-width: 28%;
+  }
+  .selectBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+    @media (max-width: 725px) {
+      gap: 0px;
+      width: 95%;
+    }
+    .menuList {
+      img {
+        padding: 2px;
+        cursor: pointer;
+        &:hover {
+          border-radius: 50%;
+          background-color: #2195f317;
+        }
+      }
+      .dropDown {
+        transition: ease-in-out 1s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background: white;
+        padding: 5px 12px;
+        right: 26px;
+        width: 40%;
+        border: 1px solid rgb(216, 216, 216);
+        &:hover {
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+          list-style: none;
+          li {
+            transition: all 0.2s;
+            padding: 2px;
+            cursor: pointer;
+            &:hover {
+              font-weight: 700;
+              background-color: #e5e5e5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .embedCodeModal {
+    .modalBody {
+      display: flex;
+      min-height: 370px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 20px;
+      .modalHeading {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      .iframeControls {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 10px 0px;
+        .radio {
+          p {
+            margin-bottom: 0;
+          }
+        }
+        .select {
+          width: 130px;
+        }
+        .pixelClass {
+          margin-left: 10px;
+        }
+      }
+      .modalBtnContainer {
+        display: flex;
+        gap: 15px;
+        margin: 5px 0px;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+.sticky {
+  height: calc(100vh - 35px);
+  padding: 18.8px;
+  overflow-x: auto;
+  transform: translateY(-10%);
+  transition: 0.5s;
+}

@@ -1,0 +1,40 @@
+.colorPaletteContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .colorPalettes {
+    width: 100%;
+    color: var(--Fonts-Font-B, #0f0f0f);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  // .wrapperClass {
+  // }
+}
+.colorFields {
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    color: var(--Fonts-Font-B, #0f0f0f);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .inputContainer {
+    input {
+      padding: 2px;
+      height: 30px;
+      font-size: 14px;
+      border-radius: 4px;
+      width: 40px !important;
+      background: transparent;
+      border: 1px solid #d5d5d5;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.commentContainer {
+  border-radius: 10px;
+  border: 1px solid #b8b8b8;
+  background: #fff;
+}
+
+.inputField {
+  width: 100% !important;
+  border-radius: 10px !important;
+  padding-right: 50px !important;
+}
+
+.commentBox {
+  width: 100%;
+}
+.commentBox .commentBody {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.commentBox .commentBody .commentTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.commentBox .commentsMessage {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+.commentsText {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.commentTime {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.colorPink {
+  background-color: #ee88cb;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentsBody {
+  width: auto;
+  gap: 1.5rem;
+}
+.commentsBody .commentsBox {
+  height: 600px;
+  overflow-x: scroll;
+}
+.commentsBody .comments {
+  display: flex;
+  padding: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-bottom-width: 2px;
+  justify-content: flex-start;
+}
+
+.sendMessageBox {
+  margin: 20px;
+  position: relative;
+}
+
+.sendBtn {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor: pointer !important;
+  transform: rotate(270deg);
+}
+
+.pinkColor {
+  background-color: #ee88cb !important;
+}
+
+.colorSkyblue {
+  background-color: #209cf6 !important;
+  color: #fff;
+}

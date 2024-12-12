@@ -1,0 +1,78 @@
+@import "@/style/_colors.scss";
+@import "@/style/_mixin.scss";
+@import "@/style/_breakpoints.scss";
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftFlex {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      @include font16;
+      color: #3a3a3a;
+      margin-left: 14px;
+    }
+    select {
+      margin: 0px 6px;
+      height: 29px;
+      padding: 0px 7px;
+      font-size: 12px;
+      background-size: 10px !important;
+      background-position: 90% 50% !important;
+    }
+  }
+
+  .rightFlex {
+    display: flex;
+    align-items: center;
+
+    span {
+      @include font16;
+      cursor: pointer;
+      color: #cacaca;
+      margin-left: 4px;
+      text-align: center;
+      width: 20px;
+    }
+    p {
+      font-weight: 400;
+      @include font16;
+      color: #3a3a3a;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    img {
+      margin-left: 10px;
+      height: calc(6px + (12 - 6) * (100vw - 280px) / (2560 - 280));
+      width: calc(6px + (12 - 6) * (100vw - 280px) / (2560 - 280));
+      cursor: pointer;
+      @media (max-width: 840px) {
+        margin-left: 6px;
+      }
+    }
+
+    .p {
+      @include font16;
+      cursor: pointer;
+      @media (max-width: $xs) {
+        display: none;
+      }
+    }
+    b {
+      @include font16;
+      cursor: pointer;
+      color: #cacaca;
+    }
+  }
+}
+.back {
+  margin-top: 0px !important;
+  border-radius: 2px !important;
+  height: 30px !important;
+}

@@ -1,0 +1,76 @@
+.templateBtn {
+  width: 100%;
+  display: flex;
+  margin: 20px 0px;
+  justify-content: end;
+  align-items: end;
+  gap: 10px;
+}
+
+.iconRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.thumbnailContainer {
+  position: relative;
+  padding-left: 10px;
+
+  img {
+    height: 25px;
+  }
+
+  .thumbnailZoom {
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 60px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: slide-down 0.5s ease-in-out forwards;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  &:hover .thumbnailZoom {
+    display: block;
+  }
+}
+
+.iconClassInventory {
+  top: 7px !important;
+}
+
+.inputClassInventory {
+  width: 300px;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.iconDiv {
+  height: 40px;
+  width: 40px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,24 @@
+.inputBase {
+  display: flex;
+  padding: 0px 8px;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+  color: #0000008a;
+  margin: 30px 0;
+  .inputContainer {
+    width: -webkit-fill-available;
+  }
+  input {
+    border: none !important;
+    font-size: 16px;
+    padding: 10px 0px;
+  }
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px 0;
+}

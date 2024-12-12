@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  .heading {
+    font-size: 26px;
+  }
+  .fieldGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 5px;
+    .field {
+      width: 200px;
+      .inputContainer {
+        // padding: 0px 18px !important;
+      }
+      .iconClass {
+        right: 5px !important;
+        top: 5px !important;
+      }
+    }
+  }
+}

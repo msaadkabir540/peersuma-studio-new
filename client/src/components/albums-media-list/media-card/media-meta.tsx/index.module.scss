@@ -1,0 +1,13 @@
+.mainLabel {
+  font-size: 10px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-left: 4px;
+  .label {
+    white-space: nowrap;
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

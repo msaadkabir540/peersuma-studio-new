@@ -1,0 +1,54 @@
+@use "@/style/colors";
+@use "@/style/breakpoints";
+@import "@/style/mixin";
+
+.inputContainer {
+  position: relative;
+
+  label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #252525;
+  }
+  textarea {
+    border-radius: 4px;
+    padding: 10px 8px;
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #d5d5d5;
+    color: black;
+    resize: auto;
+    font-family: "Poppins", sans-serif;
+    &:focus {
+      outline: none;
+      border: 1px solid #d5d5d5;
+    }
+    &::placeholder {
+      font-size: 13px;
+      font-weight: 400;
+      color: #c0c0c0;
+      font-family: "Poppins", sans-serif;
+    }
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+  }
+  .icon {
+    position: absolute;
+    right: 11px;
+    top: 16px;
+    width: 25px;
+    height: 25px;
+  }
+  .errorMessage {
+    position: absolute;
+    display: block;
+    font-size: 11px;
+    color: #ff5050;
+  }
+}

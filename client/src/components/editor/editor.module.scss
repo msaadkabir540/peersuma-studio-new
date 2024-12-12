@@ -1,0 +1,59 @@
+.editor {
+  min-height: 300px;
+  overflow-y: auto;
+  margin-top: 6px;
+  font-family: "Poppins", sans-serif;
+}
+.edit {
+  background-color: white;
+  // border: 1px solid #262626 !important;
+  border-bottom: none;
+  margin-bottom: 0px !important;
+  border-radius: 3px;
+  padding: 12px 10px;
+}
+.editorStyle {
+  margin: 0px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  max-height: 300px;
+  padding: 16px;
+  border-radius: 0px 0px 12px 12px;
+  min-height: 300px;
+  border: 1px solid #f1f1f1;
+  border-top: 1px dotted #f1f1f1;
+}
+
+.borderLess {
+  border: none !important;
+  box-shadow: none !important;
+  img {
+    height: 15px !important;
+    width: 15px !important;
+  }
+}
+
+.label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: #f5f7fa;
+}
+
+.linkDecorator {
+  left: unset !important;
+  right: -15px !important;
+  border: none !important;
+  &:hover {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.errorMessage {
+  // position: absolute;
+  display: block;
+  margin-left: 5px;
+  color: #ff5050;
+  font-size: 11px;
+}

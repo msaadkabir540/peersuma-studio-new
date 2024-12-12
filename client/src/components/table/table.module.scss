@@ -1,0 +1,114 @@
+.tableClass {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 0px 13px;
+  width: 100%;
+  margin-top: 0px;
+  thead {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    tr {
+      align-items: center;
+      th {
+        border-top: 1px solid rgb(192, 192, 192);
+        border-bottom: 1px solid rgb(192, 192, 192);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        background: #ffffff;
+        &:first-child {
+          border-left: 1px solid rgb(192, 192, 192);
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &:last-child {
+          border-right: 1px solid rgb(192, 192, 192);
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        img {
+          cursor: pointer;
+          margin-bottom: -4px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #ccc;
+
+      box-shadow: 0 5px 20px rgb(169 186 199 / 25%);
+      background-color: #ffffff;
+      td {
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        overflow-wrap: anywhere;
+
+        &:first-child {
+          border-bottom-left-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+        &:last-child {
+          border-bottom-right-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 0px 13px;
+  width: 100%;
+}
+
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.loaderClass {
+  width: 24px;
+  height: 24px;
+  border-color: rgb(0 0 0);
+  border-right: 2px solid #ffffff00;
+  margin: auto;
+}
+.iconRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.headingStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.TBodyCustom {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}

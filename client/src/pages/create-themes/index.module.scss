@@ -1,0 +1,16 @@
+.styleEdit {
+  margin: 19px 0px;
+  .field {
+    width: 100%;
+    input {
+      width: 99%;
+    }
+  }
+  .btnDivBottom {
+    gap: 10px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

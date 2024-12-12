@@ -1,0 +1,28 @@
+.projectBtn {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+  gap: 20px;
+}
+
+.iconRow {
+  gap: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.swtichProjectClass {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  text-transform: capitalize;
+}

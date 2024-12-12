@@ -1,0 +1,167 @@
+.pages {
+  display: flex;
+  align-items: center;
+
+  a {
+    all: unset;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 20px 0px;
+  }
+
+  .active {
+    border-bottom: 1px solid black;
+  }
+}
+
+.nameEditing {
+  display: flex;
+  align-items: center;
+
+  label {
+    display: flex;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+
+.iconRow {
+  display: flex;
+  align-items: center;
+  // height: 65px;
+  gap: 10px;
+  justify-content: center;
+
+  .save {
+    margin-left: 30px;
+    margin-top: 21px;
+  }
+}
+
+.loading {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.videoPlayer {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.uploadBtn {
+  display: flex;
+  margin: 20px 0;
+  height: 61px;
+  justify-content: flex-end;
+
+  .createCategory {
+    display: flex;
+    align-items: center;
+  }
+
+  .createBtn {
+    margin: 23px 0px 0 30px !important;
+  }
+
+  .closeIcon {
+    margin: 23px 0px 0 30px !important;
+    cursor: pointer;
+  }
+}
+
+.categoryName {
+  width: 400px;
+
+  label {
+    display: flex;
+  }
+}
+
+.categoryNameInput {
+  width: 95%;
+
+  label {
+    display: flex;
+  }
+}
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span {
+    padding: 2px 7px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+  }
+}
+
+.statusBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-top: 7px;
+
+  .multiSelect {
+    width: 200px;
+  }
+
+  // @media (max-width: $sm) {
+  //   max-width: 100%;
+  //   margin-right: 0px;
+  // }
+}
+
+.opacityModal {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bodyModal {
+  max-width: 25vw !important;
+}
+
+.deleteModal {
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+
+    span {
+      font-weight: bolder;
+      color: #ce4343;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+    .delBtn {
+      background-color: #ce4343;
+      color: white;
+      min-width: 100px;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .cancelBtn {
+      background-color: #d3d3d3;
+      min-width: 100px;
+    }
+  }
+}

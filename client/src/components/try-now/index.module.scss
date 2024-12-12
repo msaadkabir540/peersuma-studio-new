@@ -1,0 +1,134 @@
+.createContainer {
+  padding: 5px;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  .heading {
+    font-weight: 500;
+    font-size: 25px;
+
+    @media (max-width: 630px) {
+      font-size: 18px;
+    }
+  }
+
+  .buttonClass {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    @media (max-width: 480px) {
+      font-size: 10px !important;
+    }
+  }
+}
+
+.tryNowModal {
+  max-width: 40vw !important;
+
+  @media (max-width: 1440px) {
+    max-width: 672px !important;
+  }
+
+  @media (max-width: 780x) {
+    max-width: 90vw !important;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+  gap: 10px;
+}
+
+.nameFields {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100% !important;
+
+  .fields {
+    width: 100% !important;
+
+    .labelClass {
+      margin: 15px 0px 15px 0px;
+
+      label {
+        font-size: 18px;
+        font-weight: 500;
+
+        @media (max-width: 630px) {
+          font-size: 14px;
+        }
+      }
+
+      input {
+        padding: 10px 5px !important;
+      }
+    }
+  }
+}
+
+.mainClass {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  margin-right: 10px;
+  margin-right: 10px;
+
+  @media (max-width: 480px) {
+    gap: 2px;
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .buttonClass {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-decoration: underline;
+
+    @media (max-width: 480px) {
+      font-size: 10px !important;
+    }
+  }
+}
+
+.disableClass {
+  background-color: #c2c2c2 !important;
+}
+
+.iconClassName {
+  margin-top: 6px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.readyClass {
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
+}

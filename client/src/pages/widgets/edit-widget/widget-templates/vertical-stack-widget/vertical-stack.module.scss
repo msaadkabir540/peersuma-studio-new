@@ -1,0 +1,191 @@
+.main {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: space-around;
+  max-width: 1000px !important;
+  margin: 0px auto !important;
+  width: 100%;
+  gap: 30px;
+  @media (max-width: 480px) {
+    width: auto;
+    padding: 10px 6px;
+    justify-content: flex-start !important;
+    gap: 7px;
+  }
+  .rightPane {
+    flex: 1;
+    .name {
+      display: -webkit-box;
+      overflow: hidden;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: normal;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+    .video {
+      width: 100%;
+      height: 400px;
+    }
+
+    .description {
+      cursor: pointer;
+      font-size: 16px;
+      line-height: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin-bottom: 20px;
+      transition: all 1s;
+      cursor: pointer;
+    }
+    .sliderWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      height: 100px;
+      padding-bottom: 40px;
+      @media (max-width: 550px) {
+        justify-content: center;
+      }
+      .SliderMain {
+        min-width: 280px;
+        margin: 0 10px;
+        flex: 1;
+        @media (max-width: 700px) {
+          width: 100%;
+        }
+      }
+    }
+    .btnLeft,
+    .btnRight {
+      width: 40px;
+      height: 110px;
+      display: flex;
+      margin: 0px;
+      cursor: pointer;
+      align-items: center;
+      border-radius: 3px;
+      background-color: #ffffff54;
+      justify-content: center;
+      &:hover {
+        background: transparent !important;
+      }
+    }
+    .shareBox {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      margin: 10px 0px;
+      margin-bottom: 20px;
+      @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+      }
+      .shareViewClass {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+      .uploadedNameClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .uploadedheadingClass {
+          font-size: 20px;
+
+          @media (max-width: 480px) {
+            font-size: 12px;
+          }
+        }
+        .uploadedTimeClass {
+          font-size: 14px;
+
+          @media (max-width: 480px) {
+            font-size: 10px;
+          }
+        }
+      }
+      .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        @media (max-width: 480px) {
+          font-size: 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .leftDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    max-width: 200px !important;
+    width: 100%;
+    @media (max-width: 480px) {
+      max-width: 115px;
+    }
+    .grid {
+      width: 100%;
+      display: flex;
+      max-height: 570px;
+      overflow-y: auto;
+      flex-direction: column;
+    }
+    .viewAllClass {
+      text-align: right;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      width: 65px;
+      border-bottom: 2px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
+}
+.widgetContainer {
+  height: 350px;
+  background-color: #333;
+  margin-top: 20px;
+}
+.subText {
+  font-size: 14px;
+}
+
+.shareBox1 {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: baseline !important;
+}
+
+.showDescription {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: normal;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

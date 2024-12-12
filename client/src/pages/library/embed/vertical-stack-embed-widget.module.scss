@@ -1,0 +1,88 @@
+.thumbMain {
+  width: 100%;
+  margin: 6px 0px;
+  .thumbImage {
+    max-width: 100%;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 3.983px 3.983px;
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      @media (max-width: 480px) {
+        height: 70px;
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+    .thumbTimeContainer {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      bottom: 5px;
+      right: 1px;
+      padding: 5px;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 12px;
+      pointer-events: none;
+    }
+    .playButton {
+      top: 30%;
+      width: 33px;
+      height: 33px;
+      position: absolute;
+      @media (max-width: 480px) {
+        top: 15%;
+      }
+    }
+  }
+  .thumbText {
+    font-size: 13px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
+
+.shareBox1 {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: baseline !important;
+}
+
+.uploadedContainer {
+  display: flex !important;
+  justify-content: space-between !important;
+
+  align-items: baseline !important;
+  padding: 5px 0px;
+  .uploadedNameClass {
+    display: flex;
+    gap: 10px;
+    .uploadedheadingClass {
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .uploadedTimeClass {
+      font-size: 8px;
+    }
+  }
+  .avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+}

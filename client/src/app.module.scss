@@ -1,0 +1,22 @@
+.loading {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .loader {
+    border-color: #ed1c24 !important;
+    border-right: 4px solid transparent !important;
+    border-width: 4px;
+  }
+  span {
+    color: #ed1c24;
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+
+.containerNone {
+  padding: 0px !important;
+  max-width: 100% !important;
+}
